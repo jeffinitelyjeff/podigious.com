@@ -39,7 +39,7 @@ $(document).ready(function() {
     target: "> img"
   });
 
-  $('a').not('.ts').attr('target', '_blank');
+  // $('a').not('.ts').attr('target', '_blank');
   $('.show-attributions').click(function() {
     $('.img-box .name').hide();
     $('.img-box .source').show();
