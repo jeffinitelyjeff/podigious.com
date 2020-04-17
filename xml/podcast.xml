@@ -16,10 +16,12 @@
   <itunes:keywords>digimon,anime</itunes:keywords>
   
   <itunes:image href="http://podigious.com/img/artwork_2020_agumon.jpg" />
-  <itunes:category text="Games &amp; Hobbies">
-    <itunes:category text="Hobbies" />
+  <itunes:category text="Leisure">
+    <itunes:category text="Animation &amp; Manga" />
   </itunes:category>
-  <itunes:category text="TV &amp; Film" />
+  <itunes:category text="TV &amp; Film">
+    <itunes:category text="TV Reviews">
+  </itunes:category>
 
   <itunes:summary>A critically nostalgic, analytical podcast tour through the Digimon anime!</itunes:summary>
   <description>A critically nostalgic, analytical podcast tour through the Digimon anime!</description>
