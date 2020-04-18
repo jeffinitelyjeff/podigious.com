@@ -1,11 +1,12 @@
 body {
   margin: 45px 45px 0 45px;
-  line-height: 1.5em;
-  background-color: #365b9f;
-  color: #1F1F1F;
-  font-family: 'Nunito', sans-serif;
+  background-color: #1e1e1e;
+  font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
   font-weight: 300;
   font-size: 16px;
+  padding: 0;
+  color: #eaeaea;
+  line-height: 1.5;
 }
 
 #pagebox {
@@ -51,14 +52,18 @@ a:hover, .show-attributions:hover, .hide-attributions:hover {
   margin-bottom: 10px;
 }
 #content {
-  background-color: #678ACB;
-  color: #211804;
+  background-color: #2F343E;
+  /*color: #211804;*/
   padding-bottom: 2em;
   display: table-cell;
   vertical-align: top;
   min-width: 300px;
   max-width: 660px;
   padding: 25px 45px 0 45px;
+}
+#content.writing {
+  background-color: #eaeaea;
+  color: #1e1e1e;
 }
 .weblogPost {
   /*margin-top: 40px;*/
@@ -79,26 +84,73 @@ a:hover, .show-attributions:hover, .hide-attributions:hover {
 .weblogPostDateline a:hover {
   color: #d3c71d;
 }
+
+h1 {
+    margin-top: 0;
+    font-size: 1.563em;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 2em 0 0.5em;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.writing h1 {
+  margin: 0.5em 0;
+  font-size: 1.7em;
+}
+
+
+
 h1 a:link {
   color: #C0A021;
-  font-family: 'Francois One', sans-serif;
 }
 h1 a:visited {
   color: #ddbb33;
-  }
+}
 h1 a:hover {
   color: #ffee00;
 }
-.weblogPost h1 {
-  font-weight: normal;
-  line-height: 1.3em;
-  padding-bottom: 3px;
-  border-bottom: 2px solid #111111;
-  margin-bottom: 25px;
-}
+
 .weblogPost p {
   margin: 16px 0 16px 0;
 }
+
+.weblogPost.summary p {
+  margin: 6px 0 16px 0;
+}
+
+.summary .banner-div {
+  margin-bottom: 16px;
+}
+
+.summary h1 {
+  margin-bottom: 6px;
+}
+
+.writing {
+  background-color: #eaeaea;
+  color: #1e1e1e;
+}
+
+.writing a {
+  color: #2f343e;
+}
+
+.writing a:hover {
+  color: #C0A021;
+}
+
+.weblogPost.summary.writing {
+  padding: 3px 3px 10px 3px;
+}
+
+.summary.writing h1, .summary.writing p, .summary.writing .date-line {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 .hosted {
   font-size: 1.25em;
 }
@@ -136,14 +188,6 @@ h1 a:hover {
   .hosts {
     display: none;
   }
-
-/*  h1.banner-header {
-    margin-top: 0 !important;
-    margin-bottom: 5px !important;
-    padding-left: 0 !important;
-    text-shadow: none !important;
-  }
-*/
 
   .banner-div h1.banner-header {
     position: inherit !important;
@@ -268,44 +312,34 @@ div.audiojs {
   margin-bottom: 20px;
 }
 
-.podlovewebplayer_meta {
-  background: none !important;
-  border: 1px solid black !important;
-  border-radius: inherit !important;
+.podlovewebplayer_wrapper {
+  background-color: #1e1e1e !important;
+  color: #eaeaea !important
 }
 
-.podlovewebplayer_wrapper .podlovewebplayer_meta .episodetitle, .podlovewebplayer_chapters td {
-  color: #0A111E !important
+.podlovewebplayer_meta {
+  background: none !important;
+  border-bottom: 1px solid #969696 !important;
+  border-radius: inherit !important;
 }
 
 .podlovewebplayer_wrapper .podlovewebplayer_meta .subtitle {
   padding-top: 15px !important;
-  font-family: 'Nunito', sans-serif !important;
   font-size: 20px !important;
-  color: #FFFCD6 !important;
 }
+
 .podlovewebplayer_wrapper {
   border-radius: 0 !important;
-  background: #365A9E !important; // #243D6A !important;
   margin-top: 40px;
+  border: 1px solid #969696 !important;
 }
 
 .podlovewebplayer_wrapper td span {
-  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 14px !important;
 }
 
-.podlovewebplayer_wrapper .episodetitle h3 {
-  font-family: 'Francois One', sans-serif !important;
-}
-
-h3 {
-  font-family: 'Francois One';
-}
-
 .chaptertr, .podlovewebplayer_timecontrol, .podlovewebplayer_chapters, .podlovewebplayer_chapterbox {
-  background: none !important;
   border: none !important;
 }
 
@@ -314,31 +348,31 @@ h3 {
 }
 
 .chaptertr td {
-  border-bottom: #243D6A 1px solid !important;
-  border-top: #243D6A 1px solid !important;
+  border-bottom: #969696 1px solid !important;
+  border-top: #969696 1px solid !important;
 }
 
 .podlovewebplayer_chapters tr {
-  border-left: #243D6A 2px solid !important;
-  border-right: #243D6A 2px solid !important;
+  background: #1e1e1e !important;
+  color: #eaeaea !important;
+  /*border-left: #969696 2px solid !important;*/
+  /*border-right: #969696 2px solid !important;*/
 }
 
 .podlovewebplayer_chapters tr.active td {
-  color: #FFFCD6 !important;
-  background: #365A9E !important;
+  color: #1e1e1e !important;
+  background: #eaeaea !important;
 }
 
 .podlovewebplayer_chapters tr.active:hover td {
-  color: #E0D100 !important;
-  background: #365A9E !important;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
 .podlovewebplayer_chapters tr:hover td {
-  background: #3E68B6 !important;
-  color: #E0D100 !important;
+  background: #3e3e3e !important;
+  color: #eaeaea !important;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -378,7 +412,6 @@ img.error404 {
 }
 
 p.error404 {
-  font-family: "Source Code Pro";
   font-size: 30px;
   line-height: 35px;
   font-weight: normal;
@@ -448,7 +481,7 @@ p.error404 {
 }
 
 .ts:link, .ts:visited {
-  color: #101A2E;
+  color: #eaeaea;
 }
 
 .img-box .ts:hover, .ts:hover, .img-box .name:hover, .img-box .source:hover {
@@ -545,7 +578,15 @@ p.error404 {
 }
 
 .date-line {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+#leftsidebar p.description {
+  font-weight: bold;
+}
+
+#leftsidebar .email-signup h2 {
+  cursor: pointer;
 }
 
 #leftsidebar .links {
@@ -564,6 +605,7 @@ p.error404 {
 
 #leftsidebar .links i {
   vertical-align: middle;
+  font-weight: bold;
   font-size: 30px;
 }
 
@@ -624,22 +666,6 @@ img.banner {
   width: 100%;
 }
 
-.banner-div h1.banner-header {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border: none;
-  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  padding-left: 0;
-  padding-bottom: 0;
-}
-
-.banner-div {
-  position: relative;
-}
-
 /*h1.banner-header {
   margin-top: -52px;
   padding-left: 10px;
@@ -687,8 +713,7 @@ li:hover .link-host {
 .PDS_Poll .pds-box {
   border-radius: inherit !important;
   width: 99% !important;
-  background-color: #4973C1 !important;
-  font-family: 'Nunito', sans-serif !important;
+  background-color: #1e1e1e !important;
   font-weight: 300 !important;
 }
 
@@ -705,16 +730,16 @@ li:hover .link-host {
 }
 
 #disqus_thread {
-  background-color: #8EABE0;
+  background-color: #1e1e1e;
   padding: 5px 20px 5px 20px;
   margin-top: 30px;
   border: 1px solid black;
 }
 
-#disqus_thread a {
+/*#disqus_thread a {
   color: #CCCA1D;
 }
-
+*/
 .shirt-img {
   background-image: url(http://archive.podigious.com/img/S3_shirts_small.png);
   background-position: 100% 0;
@@ -732,7 +757,7 @@ li:hover .link-host {
 }
 
 .stickers-available {
-  background-color: #678ACB;
+  /*background-color: #678ACB;*/
   border: 1px solid black;
   padding: 10px 10px;
   margin-bottom: 10px;
@@ -807,16 +832,16 @@ li:hover .link-host {
 }
 
 #mc_embed_signup {
-  background: #456bb8;
+  background: #2f343e;
   border: 1px solid black;
-  padding: 22px 17px;
+  padding: 10px 17px;
 }
 
 #mc_embed_signup h2 {
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   margin: 0 0;
   text-align: center;
-  font-weight: 300;
 }
 
 #mc_embed_signup input[type=email] {
@@ -888,7 +913,6 @@ hr {
 }
 
 #episodes-user-ratings .rating-msg {
-  font-family: 'Nunito', sans-serif !important;
   font-size: 12px !important;
   font-weight: 700 !important;
 }
@@ -917,8 +941,15 @@ p.music-credits-header {
 
 .next-ep {
   border: 1px solid white;
-  background-color: #456bb8;
+  background-color: #B32621;
   margin-bottom: 16px;
+}
+
+.next-ep legend {
+  font-weight: bold;
+  background-color: #1e1e1e;
+  border: 1px solid white;
+  padding: 0 5px;
 }
 
 .next-ep-data-squad legend {

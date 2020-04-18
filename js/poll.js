@@ -326,7 +326,7 @@ $(document).ready(function() {
     answer_name = image_table[answer_key];
     if (answer_name) {
       var extension = answer_name.startsWith('prize/') ? '.jpg' : '.png';
-      var answer_file = '/img/' + answer_name + extension;
+      var answer_file = 'http://archive.podigious.com/img/' + answer_name + extension;
       // $(elem).text('');
       img = $('<img class="answer_img" src="' + answer_file + '" />');
       $(elem).append(img);

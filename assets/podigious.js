@@ -39,6 +39,10 @@ $(document).ready(function() {
     target: "> img"
   });
 
+  $('.email-signup h2').click(function() {
+    $('#mc_embed_signup_scroll').toggle();
+  });
+
   // $('a').not('.ts').attr('target', '_blank');
   $('.show-attributions').click(function() {
     $('.img-box .name').hide();
