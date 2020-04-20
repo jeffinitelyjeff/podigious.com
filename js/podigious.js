@@ -8,6 +8,8 @@ var random_element = function(arr) {
 }
 
 $(document).ready(function() {
+  $.bigfoot();
+
   $('.altable-banner').each(function() {
     var $img = $(this).find('img');
     var old_src = $img.attr('src');

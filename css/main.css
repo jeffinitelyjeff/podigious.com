@@ -9,6 +9,16 @@ body {
   line-height: 1.5;
 }
 
+.writing p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.writing strong {
+  font-weight: 700;
+}
+
+
 #pagebox {
   margin: 0 auto;
 }
@@ -954,4 +964,15 @@ p.music-credits-header {
 
 .next-ep-data-squad legend {
   font-size: 12px;
+}
+
+
+.writing hr {
+  background:url(/img/circuit_hr.png);
+  width: 500px;
+  height:13px;
+  background-size: 500px 13px;
+  border:none !important;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
