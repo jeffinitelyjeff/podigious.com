@@ -344,7 +344,7 @@
 
       ]]></content:encoded>
 
-    <enclosure url="https://traffic.libsyn.com/podigious/podigious_ac02.mp3" length="52980262" type="audio/mpeg" />
+    <enclosure url="https://traffic.libsyn.com/podigious/podigious_ac02-test.mp3" length="52980262" type="audio/mpeg" />
 
     
     <psc:chapters version="1.2" xmlns:psc="http://podlove.org/simple-chapters">
