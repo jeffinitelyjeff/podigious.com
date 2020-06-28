@@ -9,13 +9,35 @@ body {
   line-height: 1.5;
 }
 
-.writing p {
+.writing p, .writing figcaption {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
 .writing strong {
   font-weight: 700;
+}
+
+.writing hr {
+  background:url(/img/circuit_hr.png);
+  width: 500px;
+  height:13px;
+  background-size: 500px 13px;
+  border:none !important;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.writing figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.writing figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
 }
 
 
@@ -105,9 +127,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-.writing h1 {
+.writing h1, .writing h2 {
   margin: 0.5em 0;
+}
+
+.writing h1 {
   font-size: 1.7em;
+}
+
+.writing h2 {
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: -10px;
+}
+
+.summary.writing h2 {
+    margin-top: -5px;
 }
 
 
@@ -155,7 +190,7 @@ h1 a:hover {
   padding: 3px 3px 10px 3px;
 }
 
-.summary.writing h1, .summary.writing p, .summary.writing .date-line {
+.summary.writing h1, .summary.writing p, .summary.writing .date-line, .summary.writing h2 {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -967,12 +1002,12 @@ p.music-credits-header {
 }
 
 
-.writing hr {
-  background:url(/img/circuit_hr.png);
-  width: 500px;
-  height:13px;
-  background-size: 500px 13px;
-  border:none !important;
-  margin-top: 40px;
-  margin-bottom: 40px;
+
+span.post-type {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: 5px;
 }
