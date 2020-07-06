@@ -204,9 +204,33 @@
   <div class="weblogPostBody">
 
     
-      <div id="spotify_embed">
-        <iframe src="https://open.spotify.com/embed-podcast/show/2vxwUmZAHClzUGPyAztHok" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
+      <audio id="podlove-webplayer">
+  <source src="https://traffic.libsyn.com/podigious/podigious_12.m4a" type="audio/mpeg" />
+</audio>
+
+<script>
+$('#podlove-webplayer').podlovewebplayer({
+  
+  poster: "http://archive.podigious.com/img/ep_12/artwork_transparent.png",
+  
+  subtitle: "Adventure Movie 1: Digimon Adventure",
+  permalink: 'https://traffic.libsyn.com/podigious/podigious_12.m4a',
+  chapters: [{"start":"0:00:00","title":"Intro"},{"start":"0:00:27","title":"Follow-up"},{"start":"0:06:58","title":"Recap"},{"start":"0:08:13","title":"Favorites"},{"start":"0:10:54","title":"General"},{"start":"0:16:56","title":"Intro to Digimon"},{"start":"0:27:14","title":"Identity"},{"start":"0:28:56","title":"Dialogue Draft"},{"start":"0:31:20","title":"Outro"}],
+  downloads: [],
+  duration: '0:34:33',
+  alwaysShowHours: false,
+  startVolume: 0.8,
+  width: 'auto',
+  summaryVisible: false,
+  timecontrolsVisible: false,
+  sharebuttonsVisible: false,
+  chaptersVisible: true,
+  hidesharebutton: true,
+  timecontrolsVisible: true,
+  preload: false
+});
+</script>
+
     
 
     <div class="date-line">
