@@ -204,9 +204,33 @@
   <div class="weblogPostBody">
 
     
-      <div id="soundcloud_embed">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/260568799&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-      </div>
+      <audio id="podlove-webplayer">
+  <source src="https://traffic.libsyn.com/podigious/podigious_306.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+$('#podlove-webplayer').podlovewebplayer({
+  
+  poster: "http://archive.podigious.com/img/ep_306/artwork_transparent.png",
+  
+  subtitle: "Devas Pt. 3",
+  permalink: 'https://traffic.libsyn.com/podigious/podigious_306.mp3',
+  chapters: [{"start":"0:00:00","title":"Intro"},{"start":"0:05:49","title":"General Discussion"},{"start":"0:29:57","title":"FoxKids Ad Break 1"},{"start":"0:32:10","title":"Jeri Character Study"},{"start":"0:47:38","title":"Family Matters"},{"start":"1:11:33","title":"FoxKids Ad Break 2"},{"start":"1:17:45","title":"Stray Bits"},{"start":"1:28:58","title":"Unanswered Questions"},{"start":"1:37:42","title":"Fox Kids Ad Break 3"},{"start":"1:39:04","title":"RDD"},{"start":"1:45:29","title":"Arc Wrap-Up"},{"start":"1:52:01","title":"Recommendation Articulation"},{"start":"2:05:24","title":"Outro"}],
+  downloads: [],
+  duration: '2:23:03',
+  alwaysShowHours: false,
+  startVolume: 0.8,
+  width: 'auto',
+  summaryVisible: false,
+  timecontrolsVisible: false,
+  sharebuttonsVisible: false,
+  chaptersVisible: true,
+  hidesharebutton: true,
+  timecontrolsVisible: true,
+  preload: false
+});
+</script>
+
     
 
     <div class="date-line">

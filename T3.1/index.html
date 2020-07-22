@@ -204,9 +204,33 @@
   <div class="weblogPostBody">
 
     
-      <div id="soundcloud_embed">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/292962603&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-      </div>
+      <audio id="podlove-webplayer">
+  <source src="https://traffic.libsyn.com/podigious/podigious_T3.1.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+$('#podlove-webplayer').podlovewebplayer({
+  
+  poster: "http://archive.podigious.com/img/ep_T3.1/artwork_transparent.png",
+  
+  subtitle: "Tri Ch 3 “Confession”",
+  permalink: 'https://traffic.libsyn.com/podigious/podigious_T3.1.mp3',
+  chapters: [{"start":"0:00:00","title":"Intro"},{"start":"0:01:16","title":"Jacob"},{"start":"0:29:04","title":"Miranda"},{"start":"0:55:19","title":"Miles"},{"start":"1:15:54","title":"Rayana"},{"start":"1:41:49","title":"Callum"},{"start":"2:04:23","title":"Outro"}],
+  downloads: [],
+  duration: '2:08:24',
+  alwaysShowHours: false,
+  startVolume: 0.8,
+  width: 'auto',
+  summaryVisible: false,
+  timecontrolsVisible: false,
+  sharebuttonsVisible: false,
+  chaptersVisible: true,
+  hidesharebutton: true,
+  timecontrolsVisible: true,
+  preload: false
+});
+</script>
+
     
 
     <div class="date-line">

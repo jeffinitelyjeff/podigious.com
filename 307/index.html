@@ -204,9 +204,33 @@
   <div class="weblogPostBody">
 
     
-      <div id="soundcloud_embed">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/265035781&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-      </div>
+      <audio id="podlove-webplayer">
+  <source src="https://traffic.libsyn.com/podigious/podigious_307.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+$('#podlove-webplayer').podlovewebplayer({
+  
+  poster: "http://archive.podigious.com/img/ep_307/artwork_transparent.png",
+  
+  subtitle: "Digital World Pt. 1",
+  permalink: 'https://traffic.libsyn.com/podigious/podigious_307.mp3',
+  chapters: [{"start":"0:00:00","title":"Intro"},{"start":"0:02:54","title":"General Impressions"},{"start":"0:11:10","title":"Leveling Up Bonds"},{"start":"0:26:14","title":"FoxKids Ad Break 1"},{"start":"0:27:39","title":"Digital World"},{"start":"0:45:38","title":"FoxKids Ad Break 2"},{"start":"0:47:10","title":"Overconfidence"},{"start":"1:03:25","title":"FoxKids Ad Break 3"},{"start":"1:04:53","title":"Unanswered Questions"},{"start":"1:11:46","title":"Calumon Song Break"},{"start":"1:13:27","title":"Stray Bits"},{"start":"1:26:36","title":"Ridiculous Dialogue Draft"},{"start":"1:31:58","title":"Closing Segments"},{"start":"1:35:08","title":"Recommendation Articulation"},{"start":"1:41:04","title":"Outro"}],
+  downloads: [],
+  duration: '1:46:53',
+  alwaysShowHours: false,
+  startVolume: 0.8,
+  width: 'auto',
+  summaryVisible: false,
+  timecontrolsVisible: false,
+  sharebuttonsVisible: false,
+  chaptersVisible: true,
+  hidesharebutton: true,
+  timecontrolsVisible: true,
+  preload: false
+});
+</script>
+
     
 
     <div class="date-line">

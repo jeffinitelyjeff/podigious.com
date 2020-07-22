@@ -204,9 +204,33 @@
   <div class="weblogPostBody">
 
     
-      <div id="soundcloud_embed">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253738006&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-      </div>
+      <audio id="podlove-webplayer">
+  <source src="https://traffic.libsyn.com/podigious/podigious_T2.0.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+$('#podlove-webplayer').podlovewebplayer({
+  
+  poster: "http://archive.podigious.com/img/ep_T2.0/artwork_transparent.png",
+  
+  subtitle: "Tri Ch 2 “Determination”",
+  permalink: 'https://traffic.libsyn.com/podigious/podigious_T2.0.mp3',
+  chapters: [{"start":"0:00:00","title":"Intro"},{"start":"0:03:42","title":"General"},{"start":"0:11:21","title":"Things We Loved"},{"start":"0:26:37","title":"Things We Didn't Love"},{"start":"0:37:34","title":"Courage vs. Cowardice"},{"start":"0:58:57","title":"Fashion Report"},{"start":"1:07:48","title":"Stray Bits"},{"start":"1:25:41","title":"Looking Forward"},{"start":"1:35:10","title":"Recommendation Articulation"},{"start":"1:41:51","title":"Outro"}],
+  downloads: [],
+  duration: '2:01:44',
+  alwaysShowHours: false,
+  startVolume: 0.8,
+  width: 'auto',
+  summaryVisible: false,
+  timecontrolsVisible: false,
+  sharebuttonsVisible: false,
+  chaptersVisible: true,
+  hidesharebutton: true,
+  timecontrolsVisible: true,
+  preload: false
+});
+</script>
+
     
 
     <div class="date-line">

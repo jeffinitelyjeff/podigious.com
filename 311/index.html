@@ -204,9 +204,33 @@
   <div class="weblogPostBody">
 
     
-      <div id="soundcloud_embed">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/280326706&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-      </div>
+      <audio id="podlove-webplayer">
+  <source src="https://traffic.libsyn.com/podigious/podigious_311.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+$('#podlove-webplayer').podlovewebplayer({
+  
+  poster: "http://archive.podigious.com/img/ep_311/artwork_transparent.png",
+  
+  subtitle: "D-Reaper Pt. 1",
+  permalink: 'https://traffic.libsyn.com/podigious/podigious_311.mp3',
+  chapters: [{"start":"0:00:00","title":"Intro"},{"start":"0:03:16","title":"General Impressions"},{"start":"0:13:54","title":"Returning Home"},{"start":"0:37:59","title":"The Fault in Our Fates"},{"start":"0:55:47","title":"D-Reaper Horror"},{"start":"1:11:07","title":"FoxKids Ads"},{"start":"1:13:33","title":"Unanswered Questions"},{"start":"1:22:30","title":"Stray Bits"},{"start":"1:40:13","title":"RDD"},{"start":"1:49:04","title":"Outro"}],
+  downloads: [],
+  duration: '2:07:50',
+  alwaysShowHours: false,
+  startVolume: 0.8,
+  width: 'auto',
+  summaryVisible: false,
+  timecontrolsVisible: false,
+  sharebuttonsVisible: false,
+  chaptersVisible: true,
+  hidesharebutton: true,
+  timecontrolsVisible: true,
+  preload: false
+});
+</script>
+
     
 
     <div class="date-line">

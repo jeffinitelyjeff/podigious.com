@@ -204,9 +204,33 @@
   <div class="weblogPostBody">
 
     
-      <div id="soundcloud_embed">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289473026&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-      </div>
+      <audio id="podlove-webplayer">
+  <source src="https://traffic.libsyn.com/podigious/podigious_313.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+$('#podlove-webplayer').podlovewebplayer({
+  
+  poster: "http://archive.podigious.com/img/ep_313/artwork_transparent.png",
+  
+  subtitle: "Tamers Movie 1: Battle of Adventurers",
+  permalink: 'https://traffic.libsyn.com/podigious/podigious_313.mp3',
+  chapters: [{"start":"0:00:00","title":"Intro"},{"start":"0:02:17","title":"General Impressions"},{"start":"0:09:57","title":"Favorites"},{"start":"0:13:50","title":"DigiDestined"},{"start":"0:23:07","title":"Movie Trailer"},{"start":"0:28:09","title":"Unanswered Questions"},{"start":"0:33:38","title":"Stray Bits"},{"start":"0:48:25","title":"RDD"},{"start":"0:52:23","title":"Recommendation Articulation"},{"start":"0:58:45","title":"Outro"}],
+  downloads: [],
+  duration: '1:08:31',
+  alwaysShowHours: false,
+  startVolume: 0.8,
+  width: 'auto',
+  summaryVisible: false,
+  timecontrolsVisible: false,
+  sharebuttonsVisible: false,
+  chaptersVisible: true,
+  hidesharebutton: true,
+  timecontrolsVisible: true,
+  preload: false
+});
+</script>
+
     
 
     <div class="date-line">
