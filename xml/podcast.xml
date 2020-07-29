@@ -111,9 +111,7 @@
   <h3>Sections</h3>
   <ul id="chapters">
   
-    <li>0:00:00: podigious ac08</li>
-  
-    <li>0:00:19: Guest Intro</li>
+    <li>0:00:00: Guest Intro</li>
   
     <li>0:10:46: A Note About Slavery Isekai</li>
   
@@ -164,9 +162,7 @@
     
     <psc:chapters version="1.2" xmlns:psc="http://podlove.org/simple-chapters">
       
-      <psc:chapter start="0:00:00" title="podigious ac08" />
-      
-      <psc:chapter start="0:00:19" title="Guest Intro" />
+      <psc:chapter start="0:00:00" title="Guest Intro" />
       
       <psc:chapter start="0:10:46" title="A Note About Slavery Isekai" />
       
