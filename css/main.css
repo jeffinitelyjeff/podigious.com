@@ -713,6 +713,14 @@ p.error404 {
 
 img.banner {
   width: 100%;
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+@media (hover: hover) {
+  img.banner:hover {
+    transform: translate(4px, -4px);
+    box-shadow: -8px 8px 0 #FFFFFF;
+  }
 }
 
 /*h1.banner-header {
@@ -1065,3 +1073,4 @@ span.post-type {
 .index-writing-body {
   position: relative;
 }
+
